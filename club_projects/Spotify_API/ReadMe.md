@@ -1,21 +1,24 @@
 # Prerequisites
-This tutorial assumes you have a Spotify account (free or premium).
-We will use cURL to make API calls. You can install it from here our using the package manager of your choice.
+[A Node.js LTS environment or later](https://nodejs.org/en/).
+[npm version 7 or later](https://docs.npmjs.com/).
+A Spotify account (free or premium).
+Spotify uses cURL to make API calls. You can install it from [here](https://curl.se/download.html) , and use the package manager of your choice.
 
 # Set Up Your Account
-1. Login to the Spotify Developer Dashboard. If necessary, read the latest Developer Terms of Service to complete your account set up.
+1. Login to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard). If necessary, read the latest Developer Terms of Service to complete your account set up.
+   
 2. Create an app
-  - An app provides the Client ID and Client Secret needed to request an access token by implementing any of the authorization flows.
-  - To create an app, go to your Dashboard, click on the Create an app button and enter the following information:
-    - App Name: My App
-    - App Description: This is my first Spotify app
-    - Redirect URI: You won't need this parameter in this example, so let's use http://localhost:3000.
+  - An app provides the Client ID and Client Secret needed to request an access token by implementing any of the [authorization](https://developer.spotify.com/documentation/web-api/concepts/authorization) flows.
+  - To create an app, go to your Dashboard, click on the _Create an app_ button and enter the following information:
+    - App Name: (whatever you want)
+    - App Description: (whatever you want)
+    - Redirect URI: You won't need this parameter in this set up, so let's use http://localhost:3000.
     - Finally, check the Developer Terms of Service checkbox and tap on the Create button.
     - Request an access token
     
-The access token is a string which contains the credentials and permissions that can be used to access a given resource (e.g artists, albums or tracks) or user's data (e.g your profile or your playlists).
+The _access token_ is a string which contains the credentials and permissions that can be used to access a given resource (e.g artists, albums or tracks) or user's data (e.g your profile or your playlists).
 
-In order to request the access token you need to get your Client_ID and Client Secret:
+In order to request the access token you need to get your _Client_ID and Client Secret_:
   - Go to the Dashboard
   - Click on the name of the app you have just created (My App)
   - Click on the Settings button
@@ -40,3 +43,7 @@ The response will return an access token valid for 1 hour:
   "expires_in": 3600
 }
 ```
+
+With this done, you have an authorized access token into the Spotify API. From this point onward, this project is yours. 
+There are a ton of options available to start working with the API with documentation. There may be aditional installs and packages needed based off of what you plan on doing! 
+  - https://developer.spotify.com/documentation/web-api/howtos/web-app-profile
