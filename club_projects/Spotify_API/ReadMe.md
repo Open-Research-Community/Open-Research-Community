@@ -1,6 +1,4 @@
 # Prerequisites
-[A Node.js LTS environment or later](https://nodejs.org/en/).
-[npm version 7 or later](https://docs.npmjs.com/).
 A Spotify account (free or premium).
 Spotify uses cURL to make API calls. You can install it from [here](https://curl.se/download.html) , and use the package manager of your choice.
 
