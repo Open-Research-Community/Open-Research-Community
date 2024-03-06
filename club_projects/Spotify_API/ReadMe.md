@@ -1,6 +1,7 @@
 # Prerequisites
 A Spotify account (free or premium).
-Spotify uses cURL to make API calls. You can install it from [here](https://curl.se/download.html) , and use the package manager of your choice.
+- Spotify uses cURL to make API calls.
+- You can install it from [here](https://curl.se/download.html) , and use the package manager of your choice.
 
 # Set Up Your Account
 1. Login to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard). If necessary, read the latest Developer Terms of Service to complete your account set up.
@@ -19,8 +20,8 @@ The _access token_ is a string which contains the credentials and permissions th
 In order to request the access token you need to get your _Client_ID and Client Secret_:
   - Go to the Dashboard
   - Click on the name of the app you have just created (My App)
-  - Click on the Settings button
-  The Client ID can be found here. The Client Secret can be found behind the View client secret link.
+  - Click on the Settings button: 
+     - The Client ID can be found here. The Client Secret can be found behind the View client secret link.
 
 With our credentials in hand, we are ready to request an access token. This tutorial uses the Client Credentials, so we must:
   - Send a POST request to the token endpoint URI.
